@@ -34,7 +34,7 @@ async function checkKey() {
      */
     if (/[0-9A-Z-]{4}-[0-9A-Z-]{4}-[0-9A-Z-]{4}-[0-9A-Z-]{4}/.test(document.getElementById('licensekey').value.toUpperCase())) {
         var vdResp = await runValidation(document.getElementById('licensekey').value.toUpperCase());
-        if(vdResp == 'active') {
+        if(vdResp == true) {
             document.getElementById('status-text').classList.remove('error');
             document.getElementById('status-text').classList.add('success');
             document.getElementById('status-text').innerHTML = "Key Validated";
