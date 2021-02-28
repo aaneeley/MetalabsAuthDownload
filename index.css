@@ -82,13 +82,3 @@ canvas {
 .status-text.success {
     color: #19bd7d;
 }
-
-@font-face {
-    font-family: nunitoRegular;
-    src: url(../res/NunitoSans-Regular.ttf);
-  }
-  
-  @font-face {
-    font-family: nunitoBold;
-    src: url(../res/NunitoSans-Bold.ttf);
-  }
