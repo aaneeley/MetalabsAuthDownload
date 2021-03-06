@@ -1,0 +1,26 @@
+<!doctype html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <title>Metalabs Download</title>
+</head>
+
+<body>
+    <div class="title"> DOWNLOAD </div>
+    <input type="text" class="license-input" id="licensekey" placeholder="XXXX-XXXX-XXXX-XXXX">
+    <i class="fa fa-download download-button" onclick="checkKey();"></i>
+    <div class="status-text" id="status-text">Please enter license key</div>
+</body>
+
+<script src="https://unpkg.com/imask"></script>
+<script>
+  var patternMask = IMask(document.getElementById("licensekey"), {
+  mask: '****-****-****-****'
+});
+</script>
+
+<script src="./util.js"></script>
+
+</html>
